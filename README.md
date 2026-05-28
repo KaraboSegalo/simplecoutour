@@ -1,263 +1,102 @@
-# Simple Couture | Premium Fashion Essentials
+TABLE OF CONTENTS
+1. Organisation Overview
+2. Website Vision, Goals and Objectives
+3. Problem Statement
+4. Target Audience
+5. Proposed Website Features and Functionality
+6. Design and User Experience (UI/UX)
+7. Technical Requirements
+8. Development Approach
+9. Timeline and Milestones
+10. Risks and Limitations
+11. References
 
-**A responsive e-commerce website for Simple Couture**, a South African fashion brand specializing in premium essentials for women, men, and kids.
+1. Organisation Overview
+Simple Couture is a fashion-focused creative initiative established in 2020. The business specialises in designing, customising, and upcycling clothing items such as T-shirts and thrift garments into modern, stylish pieces. The brand promotes sustainability by reducing textile waste and transforming existing materials into wearable fashion.
 
-## Project Overview
+Mission: To create durable, affordable, and environmentally responsible clothing.
 
-Simple Couture is a multi-page website built with semantic HTML5 and comprehensive CSS styling. The site showcases a modern, minimalist design with warm earthy tones reflecting the brand's South African heritage and commitment to timeless, quality fashion.
+Vision: To become a recognised sustainable fashion brand that values creativity, quality, and ethical production.
 
-### Brand Mission
-We design clothes people actually live in—premium essentials with quality fabrics, wearable silhouettes, and responsible production methods.
+2. Website Vision, Goals and Objectives
+Vision: To create a digital platform that showcases Simple Couture’s fashion identity and products.
+Goal: To establish an online presence and improve brand visibility.
+Objectives:
+- Build a visually appealing website
+- Showcase products and brand identity
+- Enable customer communication
+- Improve accessibility and engagement
 
----
+3. Problem Statement
+Simple Couture currently has no online presence, limiting visibility and customer engagement.
+4. Target Audience
+- Men and women interested in fashion
+- Youth interested in streetwear
+- Environmentally conscious consumers
+- Budget-conscious fashion buyers
 
-## Website Structure
+5. Proposed Website Features and Functionality
+Pages:
+- Home
+- About Us
+- Shop / Products
+- Gallery
+- Contact
 
-The website consists of the following pages:
+Functionality:
+- Navigation menu
+- Product display system
+- Contact form
+- Responsive design
 
-- **index.html** - Homepage with featured products and brand introduction
-- **about.html** - Brand story, mission, vision, and sustainability promise
-- **shop.html** - Complete product catalog organized by category (Women, Men, Kids)
-- **gallery.html** - Visual showcase of products and styling inspiration
-- **contact.html** - Contact information and inquiry form
-- **styles.css** - External stylesheet with comprehensive CSS styling
+6. Design and User Experience
+Colour Scheme:
+Black, white, beige, grey
 
-### Directory Structure
-```
-simplecoutour/
-├── index.html
-├── about.html
-├── shop.html
-├── gallery.html
-├── contact.html
-├── styles.css
-├── README.md
-└── images/
-    ├── Women sweater R450.jpg
-    ├── Women jeans R600.jpg
-    ├── Men sweater R450.jpg
-    ├── Mens jeans R600.jpg
-    ├── Girls sweator R250.jpg
-    ├── Girls jacket R250.jpg
-    ├── Boys sweater R400.jpg
-    └── Boys jacket R250.jpg
-```
+Typography:
+Modern sans-serif fonts
 
----
+UX Principles:
+- Simple navigation
+- Mobile-first design
+- Clear call-to-action buttons
+- Fast loading experience
 
-## Part 1: HTML Structure & Semantic Markup
-✅ Completed - All pages use semantic HTML5 elements including `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, proper headings hierarchy, and accessible form elements.
+7. Technical Requirements
+- HTML
+- CSS
+- JavaScript
 
----
+Hosting:
+- simplecouture.co.za
+- 1-grid hosting
 
-## Part 2: CSS Styling & Responsive Design (Foundation)
-✅ Completed - Comprehensive external stylesheet with professional styling for desktop, tablet, and mobile views.
+Tools:
+- Visual Studio Code
+- Figma
+- GitHub
 
-### 2.1 External Stylesheet Implementation
-- ✅ Created a single, centralized **styles.css** file
-- ✅ Linked to all HTML pages via `<link rel="stylesheet" href="styles.css" />`
-- ✅ Consistent naming convention using CSS custom properties for maintainability
+8. Development Approach
+Phase 1: Planning
+Phase 2: Design
+Phase 3: Development
+Phase 4: Testing
+Phase 5: Deployment
 
-### 2.2 Base Styles & CSS Reset
-- ✅ CSS custom properties (variables) for colors, typography, spacing, and shadows
-- ✅ Universal box-sizing reset for consistent layout calculations
-- ✅ Default font family: "Inter" with fallbacks to system fonts
-- ✅ Gradient background applied to body
-- ✅ Normalized margins and padding across elements
-- ✅ Consistent line-height and text color throughout
+9. Timeline and Milestones
+- 28 April 2026: Submission
+- April–May 2026: Development
+- 29 May 2026: Final submission
 
-### 2.3 Typography Styles
-- ✅ Typographic scale implemented with CSS variables:
-  - Heading hierarchy: h1 (2.8rem) → h6 (1rem) using clamp() for fluid scaling
-  - Font weights: regular (400), medium (500), semibold (600), bold (700)
-  - Line heights: tight (1.2), normal (1.5), relaxed (1.75)
-  - Letter spacing: -0.05em on headings for elegant aesthetics
-- ✅ Paragraph styling with proper color contrast and spacing
-- ✅ Consistent text styling for lists, labels, and small text
+10. Risks and Limitations
+- Limited backend functionality
+- Time constraints
+- No full e-commerce system in Part 1
 
-### 2.4 Layout Structure
-- ✅ Flexbox used for navigation bar with proper alignment and wrapping
-- ✅ CSS Grid for product listing (2-column on desktop, 1-column on mobile)
-- ✅ Table layout for featured products with centered alignment
-- ✅ Semantic structure: header, main (flex: 1 for full height), footer
-- ✅ Responsive container width using min() and calc()
-- ✅ Proper padding and margin consistency using CSS variables
-
-### 2.5 Visual Styling & Interactive Elements
-- ✅ Color scheme with CSS variables for easy theming
-- ✅ Box shadows with multiple levels (sm, md, lg) for depth
-- ✅ Border radius applied consistently across components
-- ✅ Interactive states implemented:
-  - **:hover** - Underline on links, background color on nav, shadow on buttons & sections
-  - **:focus** - Outline on links and buttons for accessibility
-  - **:active** - Color change to darker shade on buttons
-- ✅ Smooth transitions on all interactive elements
-- ✅ Transform effects (translateY) on buttons and product cards for feedback
-- ✅ Product image hover effect with scale transformation
-
-### 2.6 Responsive Design Implementation
-- ✅ **Breakpoint 1 (900px)**: Tablet view - Products to 1-column, table to 2-column
-- ✅ **Breakpoint 2 (700px)**: Mobile view - Navigation stacks vertically, full-width products
-- ✅ **Breakpoint 3 (520px)**: Small mobile - Reduced font sizes, optimized spacing
-- ✅ **Breakpoint 4 (1400px)**: Large screens - Wider content container
-- ✅ Fluid typography using clamp() for smooth scaling across viewport sizes
-
----
-
-## Part 3: Responsive Design & Mobile Optimization
-✅ Completed - Advanced responsive features with relative units, responsive images, and comprehensive testing across devices.
-
-### 3.1 Responsive Breakpoints
-Implemented four strategic breakpoints to optimize layout across all device sizes:
-
-| Breakpoint | Size | Device Type | Layout Changes |
-|-----------|------|-------------|-----------------|
-| **Desktop** | 1160px+ | Desktop/Large Screens | Full multi-column layout, horizontal navigation, 4-column product grid |
-| **Large Desktop** | 1400px+ | Large Monitors | Enhanced padding, wider content container |
-| **Tablet** | 768px - 1159px | iPad/Tablets | 2-column product grid, adjusted navigation spacing |
-| **Mobile** | 375px - 699px | Smartphones | Single-column layout, stacked navigation, optimized form fields |
-| **Small Mobile** | < 375px | Compact Phones | Reduced font sizes, minimal spacing, full-width buttons |
-
-### 3.2 Relative Units Implementation
-✅ Converted to scalable relative units throughout the stylesheet:
-
-**Typography:**
-- Font sizes: `rem` units for consistent scaling (0.75rem to 2.5rem)
-- Using `clamp()` for fluid typography: `font-size: clamp(1.5rem, 2vw, 2rem)`
-- Line heights: 1.2 (tight), 1.5 (normal), 1.75 (relaxed)
-
-**Spacing & Dimensions:**
-- Padding/Margin: `rem` units (0.25rem to 3rem)
-- Border radius: `rem` units (0.5rem to 1.25rem)
-- Container widths: `%` and `min()` function for responsive sizing
-- Product grids: `grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))`
-
-**Base Font Size:**
-- HTML: `font-size: clamp(14px, 1vw, 16px)` - scales with viewport width
-- All measurements inherit from this base unit
-- Ensures consistent scaling across all screen sizes
-
-### 3.3 Responsive Images
-✅ Implemented `sizes` attribute on all product images for optimized loading:
-
-```html
-<img class="product-thumb" 
-     src="images/Women sweater R450.jpg" 
-     alt="Women sweater" 
-     sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-```
-
-**Image Optimization Strategy:**
-- **Mobile (<700px)**: 100vw - Full viewport width
-- **Tablet (700px-900px)**: 50vw - Half viewport width
-- **Desktop (>900px)**: 25vw - Quarter viewport width (4-column layout)
-
-**Benefits:**
-- Browsers load appropriately sized images for the device
-- Reduces bandwidth on mobile devices
-- Improves page load performance
-- Modern responsive image standards
-
-### 3.4 Testing & Validation
-✅ Tested across multiple devices and screen sizes:
-
-**Desktop View (1280px) - Full Layout:**
-- 4-column product grid
-- Horizontal navigation bar
-- Full section padding and spacing
-- Optimal reading line lengths
-
-**Tablet View (768px) - Adjusted Layout:**
-- 2-column product grid
-- Responsive spacing adjustments
-- Navigation with proper gaps
-- Touch-friendly tap targets
-
-**Mobile View (375px) - Optimized Layout:**
-- Single-column product grid
-- Stacked, full-width navigation
-- Reduced padding for space efficiency
-- Font sizes optimized for readability
-- Touch-optimized form fields (16px minimum)
-
-### 3.5 CSS Responsive Features
-Implemented best practices:
-
-- ✅ **Mobile-First Approach**: Base styles for mobile, enhanced with media queries for larger screens
-- ✅ **Flexible Layouts**: Flexbox for navigation, CSS Grid for product listings
-- ✅ **Responsive Typography**: `clamp()` function for smooth font scaling
-- ✅ **Flexible Containers**: `min()` function for max-width with padding
-- ✅ **Interactive States**: Hover, focus, active states optimized for both touch and mouse
-- ✅ **Performance**: Optimized shadows, transitions, and transforms
-- ✅ **Accessibility**: Focus outlines, proper contrast ratios, semantic HTML
-
----
-
-## Part 4: Version Control & GitHub Integration
-✅ Completed - Code committed to GitHub with detailed commit messages and changelog.
-
-### 4.1 Git Repository Setup
-- ✅ Repository initialized with semantic HTML and CSS
-- ✅ All files properly tracked and committed
-- ✅ Remote repository linked and synchronized
-
-### 4.2 Commit History
-See [Changelog](#changelog) section below for detailed commit messages documenting all changes made in Part 2 and Part 3.
-
-### 4.3 Push to Remote Repository
-All changes have been committed and pushed to the remote repository with descriptive commit messages following conventional commit standards.
-
----
-
-## Responsive Design Testing Evidence
-
-### Desktop View (1280px Width)
-- Full multi-column layout (4 columns for featured products)
-- Horizontal navigation with proper spacing
-- Maximum content width for readability
-- Full feature showcase with product details
-
-### Tablet View (768px Width)
-- Responsive grid layout (2 columns)
-- Touch-friendly navigation spacing
-- Optimized padding and margins
-- Content properly reflow for tablet dimensions
-
-### Mobile View (375px Width)
-- Single-column layout for easy scrolling
-- Stacked navigation for compact display
-- Full-width form fields
-- Optimized touch targets (minimum 44px recommended)
-- Reduced font sizes maintaining readability
-
----
-
-### Part 3: Advanced Responsive Design (2026-05-28)
-
-#### Version 3.0.0 - Complete Responsive Implementation with Relative Units & Responsive Images
-
-**Responsive Breakpoints Implementation:**
-- Implemented 5 strategic breakpoints: desktop (1160px+), large desktop (1400px+), tablet (768px), mobile (375px), small mobile (<375px)
-- Each breakpoint optimizes layout, typography, spacing, and navigation for target device
-- Validated across desktop, tablet, and mobile viewports
-
-**Relative Units & Scalable Typography:**
-- Converted all font sizes from px to `rem` units with `clamp()` function for fluid scaling
-- HTML base: `font-size: clamp(14px, 1vw, 16px)` - scales with viewport width (14px minimum, 16px maximum)
-- Typography scale: --fs-xs (0.75rem) through --fs-3xl (2.5rem) using CSS variables
-- All spacing converted to `rem`: --spacing-xs (0.25rem) through --spacing-2xl (3rem)
-- Container widths: `min()` function combined with `calc()` for responsive sizing
-- Product grids: CSS Grid with `repeat(2, minmax(160px, 1fr))` for flexible layouts
-
-**Responsive Images with sizes Attribute:**
-- Added `sizes` attribute to all 24 product images for optimized browser rendering
-- Mobile (<700px): `100vw` - full viewport width
-- Tablet (700px-900px): `50vw` - half viewport width
-- Desktop (>900px): `25vw` - quarter viewport width (4-column layout)
-- Browsers can now select appropriate image size based on device capabilities
-- Reduces bandwidth on mobile devices and improves page load performance
-
-**Enhanced Mobile User Experience:**
+11. References
+1. Microsoft Visual Studio Code. IDE download. Available at: Download Visual Studio Code - Mac, Linux, Windows (Accessed: 12 March 2026) 
+2. Wisepops. 35 Ecommerce Website Examples [2026]. Available at: 35 Ecommerce Website Design Examples [2026] (Accessed: 12 March 2026] 
+3. Figma. Wireframes. Available at: Figma Downloads | Web Design App for Desktops & Mobile (Accessed: 12 March 2026)
 - Touch-friendly form inputs: 16px minimum font size (prevents unwanted zoom)
 - Full-width buttons on mobile for easy tapping
 - Optimized spacing for smaller screens
