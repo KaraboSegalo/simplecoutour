@@ -3,17 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Simple Couture | Home</title>
-    <style>
-      .product-thumb {
-        width: 140px;
-        height: 140px;
-        object-fit: cover;
-        border: 1px solid #d6d6d6;
-      }
-    </style>
   </head>
   <body>
+    <!-- Site-wide header and navigation -->
     <header>
       <h1>Simple Couture</h1>
       <nav>
@@ -26,7 +20,9 @@
       <hr />
     </header>
 
+    <!-- Main homepage content -->
     <main>
+      <!-- Brand intro and quick links -->
       <section>
         <h2>Timeless fashion with modern South African character</h2>
         <p>
@@ -39,27 +35,28 @@
         </p>
       </section>
 
+      <!-- Seasonal featured products -->
       <section>
         <h2>Featured This Season</h2>
         <table>
           <tr>
             <td align="center">
-              <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Woman wearing cream and blue sweater" />
+              <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Woman wearing cream and blue sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Women Sweater</strong>
               <br />Soft premium knit for effortless layering.
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Man in quarter zip sweater" />
+              <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Man in quarter zip sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Men Sweater</strong>
               <br />Merino blend with a clean quarter-zip finish.
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girl wearing white puffer jacket" />
+              <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girl wearing white puffer jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Girls Jacket</strong>
               <br />Lightweight warmth made for cold school mornings.
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boy in tan quilted jacket" />
+              <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boy in tan quilted jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Boys Jacket</strong>
               <br />Durable everyday outerwear with comfort-first fit.
             </td>
@@ -68,6 +65,7 @@
       </section>
     </main>
 
+    <!-- Footer with contact and copyright -->
     <footer>
       <hr />
       <p>Phone / WhatsApp: <a href="tel:+27067204718">+27 067 204 7183</a></p>

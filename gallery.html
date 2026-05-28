@@ -3,17 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Simple Couture | Gallery</title>
-    <style>
-      .product-thumb {
-        width: 140px;
-        height: 140px;
-        object-fit: cover;
-        border: 1px solid #d6d6d6;
-      }
-    </style>
   </head>
   <body>
+    <!-- Site-wide header and navigation -->
     <header>
       <h1>Simple Couture</h1>
       <nav>
@@ -26,7 +20,9 @@
       <hr />
     </header>
 
+    <!-- Gallery content -->
     <main>
+      <!-- Page introduction -->
       <section>
         <h2>Gallery</h2>
         <p>
@@ -35,48 +31,50 @@
         </p>
       </section>
 
+      <!-- Featured adult looks -->
       <section>
         <h2>Featured Looks</h2>
         <table>
           <tr>
             <td align="center">
-              <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Women sweater" />
+              <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Women sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Women Sweater</strong>
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Women jeans R600.jpg" alt="Women jeans" />
+              <img class="product-thumb" src="images/Women jeans R600.jpg" alt="Women jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Women Jeans</strong>
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Men sweater" />
+              <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Men sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Men Sweater</strong>
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Mens jeans R600.jpg" alt="Mens jeans" />
+              <img class="product-thumb" src="images/Mens jeans R600.jpg" alt="Mens jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Men Jeans</strong>
             </td>
           </tr>
         </table>
       </section>
 
+      <!-- Kids looks showcase -->
       <section>
         <h2>Kids Collection</h2>
         <table>
           <tr>
             <td align="center">
-              <img class="product-thumb" src="images/Girls sweator R250.jpg" alt="Girls sweater" />
+              <img class="product-thumb" src="images/Girls sweator R250.jpg" alt="Girls sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Girls Sweater</strong>
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girls jacket" />
+              <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girls jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Girls Jacket</strong>
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Boys sweater R400.jpg" alt="Boys sweater" />
+              <img class="product-thumb" src="images/Boys sweater R400.jpg" alt="Boys sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Boys Sweater</strong>
             </td>
             <td align="center">
-              <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boys jacket" />
+              <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boys jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
               <br /><strong>Boys Jacket</strong>
             </td>
           </tr>
@@ -84,6 +82,7 @@
       </section>
     </main>
 
+    <!-- Footer block -->
     <footer>
       <hr />
       <p>Gallery Showcase</p>

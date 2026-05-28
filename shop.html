@@ -3,17 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Simple Couture | Shop</title>
-    <style>
-      .product-thumb {
-        width: 140px;
-        height: 140px;
-        object-fit: cover;
-        border: 1px solid #d6d6d6;
-      }
-    </style>
   </head>
   <body>
+    <!-- Site-wide header and navigation -->
     <header>
       <h1>Simple Couture</h1>
       <nav>
@@ -26,7 +20,9 @@
       <hr />
     </header>
 
+    <!-- Shop page content -->
     <main>
+      <!-- Shop intro copy -->
       <section>
         <h2>Shop</h2>
         <p>
@@ -35,53 +31,58 @@
         </p>
       </section>
 
+      <!-- Product groups by category -->
       <section class="products">
+        <!-- Women collection -->
         <h3>Women</h3>
         <ul class="product-list">
           <li class="product-item">
-            <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Women sweater" />
+            <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Women sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Women Sweater - R450</p>
           </li>
           <li class="product-item">
-            <img class="product-thumb" src="images/Women jeans R600.jpg" alt="Women jeans" />
+            <img class="product-thumb" src="images/Women jeans R600.jpg" alt="Women jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Women Jeans - R600</p>
           </li>
         </ul>
 
+        <!-- Men collection -->
         <h3>Men</h3>
         <ul class="product-list">
           <li class="product-item">
-            <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Men sweater" />
+            <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Men sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Men Sweater - R450</p>
           </li>
           <li class="product-item">
-            <img class="product-thumb" src="images/Mens jeans R600.jpg" alt="Men jeans" />
+            <img class="product-thumb" src="images/Mens jeans R600.jpg" alt="Men jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Men Jeans - R600</p>
           </li>
         </ul>
 
+        <!-- Kids collection -->
         <h3>Kids</h3>
         <ul class="product-list">
           <li class="product-item">
-            <img class="product-thumb" src="images/Girls sweator R250.jpg" alt="Girls sweater" />
+            <img class="product-thumb" src="images/Girls sweator R250.jpg" alt="Girls sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Girls Sweater - R250</p>
           </li>
           <li class="product-item">
-            <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girls jacket" />
+            <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girls jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Girls Jacket - R250</p>
           </li>
           <li class="product-item">
-            <img class="product-thumb" src="images/Boys sweater R400.jpg" alt="Boys sweater" />
+            <img class="product-thumb" src="images/Boys sweater R400.jpg" alt="Boys sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Boys Sweater - R400</p>
           </li>
           <li class="product-item">
-            <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boys jacket" />
+            <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boys jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
             <p class="product-name">Boys Jacket - R250</p>
           </li>
         </ul>
       </section>
     </main>
 
+    <!-- Footer with category summary -->
     <footer>
       <hr />
       <p>Women | Men | Kids | Denim | Outerwear</p>
