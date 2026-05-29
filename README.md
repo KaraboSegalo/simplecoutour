@@ -97,27 +97,261 @@ Phase 5: Deployment
 1. Microsoft Visual Studio Code. IDE download. Available at: Download Visual Studio Code - Mac, Linux, Windows (Accessed: 12 March 2026) 
 2. Wisepops. 35 Ecommerce Website Examples [2026]. Available at: 35 Ecommerce Website Design Examples [2026] (Accessed: 12 March 2026] 
 3. Figma. Wireframes. Available at: Figma Downloads | Web Design App for Desktops & Mobile (Accessed: 12 March 2026)
-- Touch-friendly form inputs: 16px minimum font size (prevents unwanted zoom)
-- Full-width buttons on mobile for easy tapping
-- Optimized spacing for smaller screens
-- Readable font sizes maintained at all breakpoints
-- Navigation properly adapts: horizontal on desktop, stacked on mobile
 
-**Performance & Optimization:**
-- CSS Grid with `auto-fit` for flexible product layouts that reflow naturally
-- Reduced shadow complexity on smaller devices
-- Optimized transition timing (0.2s for responsive interactions)
-- Efficient media query structure for minimal CSS file size
+---
 
-**Testing & Validation Evidence:**
-- Desktop (1280px): 4-column product grid, horizontal navigation, full spacing
-- Tablet (768px): 2-column grid, responsive spacing adjustments
-- Mobile (375px): Single-column layout, stacked navigation, touch-optimized elements
-- All breakpoints tested for layout stability and content readability
-- Form elements verified for accessibility and mobile usability
+## PART 2: DESIGNING THE VISUALS - CSS STYLING AND RESPONSIVE DESIGN
 
-**Accessibility Maintained:**
-- WCAG AA color contrast maintained across all breakpoints
+### 2.1 External Stylesheet Implementation
+✅ **Completed** - A single, centralized `styles.css` file has been created and linked to all HTML pages.
+
+**File Structure:**
+- Location: `simplecoutour/styles.css`
+- Size: Comprehensive stylesheet with CSS custom properties, typography, layout, components, and media queries
+- Linked in all HTML files: `<link rel="stylesheet" href="styles.css" />`
+
+### 2.2 CSS Architecture and Organization
+
+**1. Root Variables & Color Scheme**
+The stylesheet uses CSS custom properties (variables) for consistent theming:
+
+| Variable | Value | Purpose |
+|----------|-------|---------|
+| `--bg` | #f7f5f0 | Light neutral background |
+| `--surface` | #ffffff | White surfaces (cards, sections) |
+| `--primary` | #8f5e3d | Warm brown primary color |
+| `--accent` | #5a4b40 | Dark accent for emphasis |
+| `--text` | #1e1b18 | Primary text color |
+| `--text-light` | #5f5a55 | Secondary text color |
+| `--success`, `--warning`, `--error` | Various | Status colors for feedback |
+
+**2. Typography System**
+Modern sans-serif typography with a complete scale:
+
+| Size | Variable | Use Case |
+|------|----------|----------|
+| 0.75rem | `--fs-xs` | Small labels, captions |
+| 0.875rem | `--fs-sm` | Subtext, meta information |
+| 1rem | `--fs-base` | Body text, paragraphs |
+| 1.125rem | `--fs-lg` | Larger body text |
+| 1.5rem | `--fs-xl` | Section headings |
+| 2rem | `--fs-2xl` | Page section titles |
+| 2.5rem | `--fs-3xl` | Main page headings |
+
+Font Weights:
+- Regular (400) - Body text
+- Medium (500) - Emphasis
+- Semibold (600) - Subheadings
+- Bold (700) - Headings
+
+Line Heights:
+- 1.2 (tight) - Headings
+- 1.5 (normal) - Body text
+- 1.75 (relaxed) - Large blocks
+
+### 2.3 Base Styles and CSS Reset
+
+**Box Model:**
+- Universal `box-sizing: border-box` applied for consistent sizing
+- Normalized margins and padding across all elements
+- Consistent line-height and text color
+
+**Typography Base:**
+- Font family: Modern sans-serif stack with system font fallbacks
+- Color contrast maintained for accessibility
+- Letter-spacing adjusted on headings (-0.05em) for elegant appearance
+
+**Layout Base:**
+- Body uses flexbox with a gradient background
+- Main content uses `flex: 1` for full-height layouts
+- Footer positioned at bottom with semantic structure
+
+### 2.4 Component Styling
+
+**Navigation Bar:**
+- Flexbox layout for horizontal alignment
+- Responsive spacing between links
+- Smooth transitions on hover
+- Active state styling for current page
+
+**Product Cards (`product-item`):**
+- Rounded corners with consistent border radius
+- Box shadow for depth and elevation
+- Hover effects: Scale transformation and shadow enhancement
+- Smooth transitions for interactive feedback
+
+**Forms and Inputs:**
+- Consistent styling across all form elements
+- Focus states for accessibility
+- Touch-friendly input sizes (minimum 16px for mobile)
+- Clear visual hierarchy with labels
+
+**Buttons:**
+- Primary and secondary button styles
+- Hover, focus, and active states
+- Transform effects (translateY) for interactive feedback
+- Full-width on mobile for easy tapping
+
+### 2.5 Layout Patterns
+
+**Flexbox Layouts:**
+- Navigation: Horizontal flex with proper alignment
+- Sections: Flex containers for flexible content distribution
+- Forms: Flex-based field organization
+
+**CSS Grid:**
+- Product grid: `grid-template-columns: repeat(auto-fit, minmax(160px, 1fr))`
+- Auto-fits products to available space
+- Maintains minimum column width for readability
+
+**Container System:**
+- Max-width: `min(95vw, 1200px)`
+- Responsive padding that scales with viewport
+- Centered content with `margin: 0 auto`
+
+### 2.6 Responsive Design - Breakpoints
+
+**Breakpoint Strategy (Mobile-First):**
+
+| Breakpoint | Device | Layout Changes |
+|-----------|--------|-----------------|
+| **Base (Mobile)** | < 520px | Single-column, stacked nav, reduced spacing |
+| **520px - 700px** | Small phones | Increased padding, larger text |
+| **700px - 900px** | Tablets | 2-column product grid, adjusted spacing |
+| **900px - 1160px** | Larger tablets | 3-column grid, more padding |
+| **1160px+** | Desktop | 4-column grid, full features |
+| **1400px+** | Large screens | Enhanced padding, wider container |
+
+**Media Query Implementation:**
+```css
+@media (max-width: 700px) {
+  /* Mobile-specific styles */
+}
+
+@media (min-width: 900px) {
+  /* Tablet and above */
+}
+
+@media (min-width: 1160px) {
+  /* Desktop and above */
+}
+```
+
+### 2.7 Interactive States
+
+**Hover Effects:**
+- Links: Underline text decoration
+- Navigation: Background color change
+- Buttons: Shadow and color enhancement
+- Product cards: Scale transformation (1.02x) with shadow increase
+
+**Focus States:**
+- All interactive elements have visible focus outlines
+- Color: Primary brand color for consistency
+- Improves keyboard navigation accessibility
+
+**Active States:**
+- Buttons: Darker color shade
+- Forms: Border color change
+- Clear visual feedback for user interactions
+
+### 2.8 Spacing System
+
+**Consistent Spacing Variables:**
+- `--spacing-xs` (0.25rem) - Minimal gaps
+- `--spacing-sm` (0.5rem) - Small spacing
+- `--spacing-md` (1rem) - Standard spacing
+- `--spacing-lg` (1.5rem) - Large gaps
+- `--spacing-xl` (2rem) - Extra large spacing
+- `--spacing-2xl` (3rem) - Maximum spacing
+
+Applied consistently across:
+- Padding (elements)
+- Margins (spacing between elements)
+- Gaps (flex and grid spacing)
+
+### 2.9 Shadow System
+
+**Elevation Levels:**
+- `--shadow-sm` - Subtle depth (buttons, inputs)
+- `--shadow-md` - Medium elevation (cards, sections)
+- `--shadow-lg` - Strong elevation (modals, prominent elements)
+
+### 2.10 Responsive Typography
+
+**Dynamic Font Sizing with `clamp()`:**
+```css
+html {
+  font-size: clamp(14px, 1vw, 16px);
+}
+```
+
+- Minimum: 14px (smallest screens)
+- Preferred: 1vw (scales with viewport)
+- Maximum: 16px (large screens)
+- All other sizes scale proportionally with `rem` units
+
+### 2.11 Testing & Validation
+
+**Desktop View (1280px):**
+- ✅ 4-column product grid
+- ✅ Horizontal navigation with full spacing
+- ✅ Maximum content width for readability
+- ✅ Full feature showcase with all details
+
+**Tablet View (768px):**
+- ✅ 2-column product grid
+- ✅ Responsive spacing adjustments
+- ✅ Touch-friendly navigation
+- ✅ Optimized for iPad and tablet devices
+
+**Mobile View (375px):**
+- ✅ Single-column layout for easy scrolling
+- ✅ Stacked navigation menu
+- ✅ Full-width form fields
+- ✅ Touch-optimized buttons (44px+ minimum target size)
+- ✅ Readable font sizes maintained
+- ✅ Optimized spacing for compact screens
+
+### 2.12 Accessibility Features
+
+**Color Contrast:**
+- All text meets WCAG AA standards (4.5:1 ratio)
+- Primary text: Dark on light backgrounds
+- Links: Underlined for visibility
+
+**Focus Management:**
+- Visible focus outlines on all interactive elements
+- Keyboard navigation fully supported
+- Tab order logical and predictable
+
+**Form Accessibility:**
+- All inputs have associated labels
+- Clear error messages and validation feedback
+- Touch-friendly input sizes (16px minimum)
+
+### 2.13 Performance Optimization
+
+**CSS Optimization:**
+- CSS custom properties for efficient theming
+- Minimal CSS reflows and repaints
+- Smooth transitions (0.2s) for responsive animations
+- Optimized media query structure
+
+**Image Loading:**
+- `sizes` attribute for responsive images
+- Browser-optimized image selection based on device
+- Reduced bandwidth on mobile devices
+
+**Summary of Part 2 Implementation:**
+- ✅ Centralized external stylesheet created
+- ✅ Complete CSS variable system implemented
+- ✅ Typography scale with fluid sizing
+- ✅ Responsive layout with multiple breakpoints
+- ✅ Interactive states and visual feedback
+- ✅ Accessibility standards maintained
+- ✅ Performance optimizations applied
+- ✅ Tested across desktop, tablet, and mobile viewports
 - Focus states visible at all screen sizes with 2px outline + offset
 - Form labels properly associated with inputs on all devices
 - Semantic HTML structure preserved throughout responsive transformations
