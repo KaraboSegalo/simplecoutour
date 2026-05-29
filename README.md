@@ -103,12 +103,12 @@ Phase 5: Deployment
 ## PART 2: DESIGNING THE VISUALS - CSS STYLING AND RESPONSIVE DESIGN
 
 ### 2.1 External Stylesheet Implementation
-✅ **Completed** - A single, centralized `styles.css` file has been created and linked to all HTML pages.
+✅ **Completed** - A single, centralized `css/styles.css` file has been created and linked to all HTML pages.
 
 **File Structure:**
-- Location: `simplecoutour/styles.css`
+- Location: `css/styles.css`
 - Size: Comprehensive stylesheet with CSS custom properties, typography, layout, components, and media queries
-- Linked in all HTML files: `<link rel="stylesheet" href="styles.css" />`
+- Linked in all HTML files: `<link rel="stylesheet" href="css/styles.css" />`
 
 ### 2.2 CSS Architecture and Organization
 
