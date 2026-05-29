@@ -93,11 +93,12 @@ Phase 5: Deployment
 - Time constraints
 - No full e-commerce system in Part 1
 
-11. References
+ References
 1. Microsoft Visual Studio Code. IDE download. Available at: Download Visual Studio Code - Mac, Linux, Windows (Accessed: 12 March 2026) 
 2. Wisepops. 35 Ecommerce Website Examples [2026]. Available at: 35 Ecommerce Website Design Examples [2026] (Accessed: 12 March 2026] 
 3. Figma. Wireframes. Available at: Figma Downloads | Web Design App for Desktops & Mobile (Accessed: 12 March 2026)
-
+4. CSS Tutorial. W3schools at: https://www.w3schools.com/Css/ (Accessed: 18 May April 2026)
+5. CSS Complete Guide. GeeksforGeeks at: https://www.geeksforgeeks.org/css/css-complete-guide/ (Accesssed: 12 May 2026)
 ---
 
 ## PART 2: DESIGNING THE VISUALS - CSS STYLING AND RESPONSIVE DESIGN
