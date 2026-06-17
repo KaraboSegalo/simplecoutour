@@ -3,66 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Simple Couture in Johannesburg for sizing help, custom orders, wholesale enquiries, and sustainable fashion support."
+    />
+    <meta
+      name="keywords"
+      content="contact Simple Couture, Johannesburg clothing brand, custom fashion order, sustainable fashion enquiry"
+    />
+    <meta name="author" content="Simple Couture" />
+    <link rel="canonical" href="contact.html" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Simple Couture | Contact</title>
+    <script src="js/app.js" defer></script>
+    <title>Simple Couture | Contact Johannesburg Studio</title>
   </head>
   <body>
-    <!-- Site-wide header and navigation -->
     <header>
-      <h1>Simple Couture</h1>
-      <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </nav>
-      <hr />
+      <div class="site-header">
+        <a class="brand" href="index.html">Simple Couture</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Contact page content -->
     <main>
-      <!-- Intro text -->
-      <section>
-        <h2>Contact</h2>
+      <section class="page-intro">
+        <p class="eyebrow">Customer support</p>
+        <h1>Contact Simple Couture</h1>
         <p>Need sizing help, wholesale details, or a custom order?</p>
       </section>
 
-      <!-- Direct contact details -->
-      <section>
-        <h3>Get In Touch</h3>
-        <p>Email: <a href="mailto:hello@simplecouture.co.za">hello@simplecouture.co.za</a></p>
-        <p>Phone / WhatsApp: <a href="tel:+27067204718">+27 067 204 7183</a></p>
-        <p>Studio Hours: Mon - Sat, 09:00 - 18:00</p>
-        <p>Address: Johannesburg, Gauteng, South Africa</p>
+      <section class="contact-layout">
+        <div>
+          <h2>Get In Touch</h2>
+          <p>Email: <a href="mailto:hello@simplecouture.co.za">hello@simplecouture.co.za</a></p>
+          <p>Phone / WhatsApp: <a href="tel:+27672047183">+27 067 204 7183</a></p>
+          <p>Studio Hours: Mon - Sat, 09:00 - 18:00</p>
+          <p>Address: Johannesburg, Gauteng, South Africa</p>
+        </div>
+
+        <form id="contact-form" action="#" method="post" novalidate>
+          <h2>Send a Message</h2>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <span class="field-error" data-error-for="name"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <span class="field-error" data-error-for="email"></span>
+          </div>
+          <div class="form-field">
+            <label for="topic">Enquiry type</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option value="Sizing">Sizing help</option>
+              <option value="Custom order">Custom order</option>
+              <option value="Wholesale">Wholesale</option>
+              <option value="General">General question</option>
+            </select>
+            <span class="field-error" data-error-for="topic"></span>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="field-error" data-error-for="message"></span>
+          </div>
+          <button type="submit">Send Message</button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
       </section>
 
-      <!-- Static contact form (no backend yet) -->
       <section>
-        <h3>Contact Form</h3>
-        <form action="#" method="post">
-          <p>
-            <label for="name">Name:</label><br />
-            <input id="name" name="name" type="text" required />
-          </p>
-          <p>
-            <label for="email">Email:</label><br />
-            <input id="email" name="email" type="email" required />
-          </p>
-          <p>
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </p>
-          <p>
-            <button type="submit">Send Message</button>
-          </p>
-        </form>
+        <div class="section-heading">
+          <p class="eyebrow">Location map</p>
+          <h2>Johannesburg Studio Area</h2>
+        </div>
+        <div class="map-wrap">
+          <iframe
+            title="Map showing Johannesburg, Gauteng, South Africa"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=27.855%2C-26.35%2C28.25%2C-26.05&amp;layer=mapnik&amp;marker=-26.2041%2C28.0473"
+            loading="lazy"
+          ></iframe>
+        </div>
       </section>
     </main>
 
-    <!-- Footer response note and copyright -->
     <footer>
-      <hr />
       <p>We answer within 24 hours</p>
       <p>&copy; 2026 Simple Couture</p>
     </footer>

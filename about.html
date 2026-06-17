@@ -3,70 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about Simple Couture, a Johannesburg fashion brand focused on quality essentials, sustainable clothing, and responsible production."
+    />
+    <meta
+      name="keywords"
+      content="about Simple Couture, sustainable fashion Johannesburg, responsible clothing production, South African fashion brand"
+    />
+    <meta name="author" content="Simple Couture" />
+    <link rel="canonical" href="about.html" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Simple Couture | About</title>
+    <script src="js/app.js" defer></script>
+    <title>Simple Couture | About Our Sustainable Fashion Brand</title>
   </head>
   <body>
-    <!-- Site-wide header and navigation -->
     <header>
-      <h1>Simple Couture</h1>
-      <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </nav>
-      <hr />
+      <div class="site-header">
+        <a class="brand" href="index.html">Simple Couture</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="shop.html">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- About page storytelling sections -->
     <main>
-      <!-- Brand overview -->
-      <section>
-        <h2>About Simple Couture</h2>
-        <p>We design clothes people actually live in.</p>
+      <section class="page-intro">
+        <p class="eyebrow">About the brand</p>
+        <h1>We design clothes people actually live in</h1>
         <p>
-          From quiet studio beginnings to a growing community brand, we build
-          wearable essentials that combine premium fit, local pride, and
-          responsible production.
+          From quiet studio beginnings to a growing community brand, Simple
+          Couture builds wearable essentials that combine premium fit, local
+          pride, and responsible production.
         </p>
       </section>
 
-      <!-- Company origin story -->
       <section>
-        <h2>Our History</h2>
-        <p>
-          Simple Couture started in Johannesburg as a small capsule project
-          focused on elevated basics. As demand grew, we stayed committed to
-          low-volume production and long-lasting craftsmanship.
-        </p>
-      </section>
-
-      <!-- Mission and long-term direction -->
-      <section>
-        <h2>Mission and Vision</h2>
-        <p>
-          We are shaping a wardrobe culture where quality wins over quantity.
-          Our vision is to make conscious fashion the standard in every South
-          African home.
-        </p>
-      </section>
-
-      <!-- Sustainability and sourcing principles -->
-      <section>
-        <h2>Sustainability Promise</h2>
-        <p>
-          We prioritize natural fibers, efficient pattern cutting, and reworked
-          seasonal pieces to lower waste. Packaging is recyclable, and suppliers
-          are selected for fair labor and traceable materials.
-        </p>
+        <div class="tabs" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Simple Couture values">
+            <button type="button" role="tab" aria-selected="true" aria-controls="history-panel" id="history-tab">
+              History
+            </button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="mission-panel" id="mission-tab">
+              Mission
+            </button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="sustainability-panel" id="sustainability-tab">
+              Sustainability
+            </button>
+          </div>
+          <article id="history-panel" role="tabpanel" aria-labelledby="history-tab">
+            <h2>Our History</h2>
+            <p>
+              Simple Couture started in Johannesburg as a small capsule project
+              focused on elevated basics. As demand grew, we stayed committed
+              to low-volume production and long-lasting craftsmanship.
+            </p>
+          </article>
+          <article id="mission-panel" role="tabpanel" aria-labelledby="mission-tab" hidden>
+            <h2>Mission and Vision</h2>
+            <p>
+              We are shaping a wardrobe culture where quality wins over
+              quantity. Our vision is to make conscious fashion the standard in
+              every South African home.
+            </p>
+          </article>
+          <article id="sustainability-panel" role="tabpanel" aria-labelledby="sustainability-tab" hidden>
+            <h2>Sustainability Promise</h2>
+            <p>
+              We prioritize natural fibers, efficient pattern cutting, and
+              reworked seasonal pieces to lower waste. Packaging is recyclable,
+              and suppliers are selected for fair labor and traceable materials.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
-    <!-- Footer tagline and copyright -->
     <footer>
-      <hr />
       <p>Conscious Craft | Modern Fit</p>
       <p>&copy; 2026 Simple Couture</p>
     </footer>

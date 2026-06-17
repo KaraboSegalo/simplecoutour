@@ -3,88 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View the Simple Couture gallery featuring sustainable sweaters, denim, and jackets for women, men, girls, and boys."
+    />
+    <meta
+      name="keywords"
+      content="Simple Couture gallery, fashion gallery, sustainable fashion images, women jeans, men jeans, kids sweaters"
+    />
+    <meta name="author" content="Simple Couture" />
+    <link rel="canonical" href="gallery.html" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Simple Couture | Gallery</title>
+    <script src="js/app.js" defer></script>
+    <title>Simple Couture | Clothing Gallery</title>
   </head>
   <body>
-    <!-- Site-wide header and navigation -->
     <header>
-      <h1>Simple Couture</h1>
-      <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </nav>
-      <hr />
+      <div class="site-header">
+        <a class="brand" href="index.html">Simple Couture</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+          <a href="gallery.html" aria-current="page">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Gallery content -->
     <main>
-      <!-- Page introduction -->
-      <section>
-        <h2>Gallery</h2>
+      <section class="page-intro">
+        <p class="eyebrow">Interactive lightbox</p>
+        <h1>Gallery</h1>
         <p>
-          Explore how each piece moves from design concept to production-ready
-          fit through craftsmanship, fabric, and detail.
+          Click any look to view it in a larger lightbox. The collection shows
+          how each piece moves from fabric choice to everyday styling.
         </p>
       </section>
 
-      <!-- Featured adult looks -->
       <section>
-        <h2>Featured Looks</h2>
-        <table>
-          <tr>
-            <td align="center">
-              <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Women sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Women Sweater</strong>
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Women jeans R600.jpg" alt="Women jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Women Jeans</strong>
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Men sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Men Sweater</strong>
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Mens jeans R600.jpg" alt="Mens jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Men Jeans</strong>
-            </td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- Kids looks showcase -->
-      <section>
-        <h2>Kids Collection</h2>
-        <table>
-          <tr>
-            <td align="center">
-              <img class="product-thumb" src="images/Girls sweator R250.jpg" alt="Girls sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Girls Sweater</strong>
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girls jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Girls Jacket</strong>
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Boys sweater R400.jpg" alt="Boys sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Boys Sweater</strong>
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boys jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Boys Jacket</strong>
-            </td>
-          </tr>
-        </table>
+        <div class="section-heading">
+          <p class="eyebrow">Featured looks</p>
+          <h2>Women, Men, and Kids Collection</h2>
+        </div>
+        <div class="gallery-grid" data-gallery-grid></div>
       </section>
     </main>
 
-    <!-- Footer block -->
+    <div class="lightbox" data-lightbox hidden>
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image view">
+        Close
+      </button>
+      <img src="" alt="" data-lightbox-image />
+      <p data-lightbox-caption></p>
+    </div>
+
     <footer>
-      <hr />
       <p>Gallery Showcase</p>
       <p>&copy; 2026 Simple Couture</p>
     </footer>

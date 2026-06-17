@@ -3,88 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop Simple Couture women, men, and kids clothing including sweaters, denim, and jackets from Johannesburg, South Africa."
+    />
+    <meta
+      name="keywords"
+      content="shop Simple Couture, women sweater, men sweater, kids jackets, South African clothing, Johannesburg fashion store"
+    />
+    <meta name="author" content="Simple Couture" />
+    <link rel="canonical" href="shop.html" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Simple Couture | Shop</title>
+    <script src="js/app.js" defer></script>
+    <title>Simple Couture | Shop Clothing Online</title>
   </head>
   <body>
-    <!-- Site-wide header and navigation -->
     <header>
-      <h1>Simple Couture</h1>
-      <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </nav>
-      <hr />
+      <div class="site-header">
+        <a class="brand" href="index.html">Simple Couture</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html" aria-current="page">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Shop page content -->
     <main>
-      <!-- Shop intro copy -->
-      <section>
-        <h2>Shop</h2>
+      <section class="page-intro">
+        <p class="eyebrow">Dynamic catalogue</p>
+        <h1>Shop Sustainable Everyday Clothing</h1>
         <p>
-          Curated fits for women, men, and kids. All prices are in South
-          African Rand.
+          Browse curated fits for women, men, and kids. Use the search and
+          filters to find sweaters, denim, and jackets quickly.
         </p>
       </section>
 
-      <!-- Product groups by category -->
-      <section class="products">
-        <!-- Women collection -->
-        <h3>Women</h3>
-        <ul class="product-list">
-          <li class="product-item">
-            <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Women sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Women Sweater - R450</p>
-          </li>
-          <li class="product-item">
-            <img class="product-thumb" src="images/Women jeans R600.jpg" alt="Women jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Women Jeans - R600</p>
-          </li>
-        </ul>
-
-        <!-- Men collection -->
-        <h3>Men</h3>
-        <ul class="product-list">
-          <li class="product-item">
-            <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Men sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Men Sweater - R450</p>
-          </li>
-          <li class="product-item">
-            <img class="product-thumb" src="images/Mens jeans R600.jpg" alt="Men jeans" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Men Jeans - R600</p>
-          </li>
-        </ul>
-
-        <!-- Kids collection -->
-        <h3>Kids</h3>
-        <ul class="product-list">
-          <li class="product-item">
-            <img class="product-thumb" src="images/Girls sweator R250.jpg" alt="Girls sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Girls Sweater - R250</p>
-          </li>
-          <li class="product-item">
-            <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girls jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Girls Jacket - R250</p>
-          </li>
-          <li class="product-item">
-            <img class="product-thumb" src="images/Boys sweater R400.jpg" alt="Boys sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Boys Sweater - R400</p>
-          </li>
-          <li class="product-item">
-            <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boys jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-            <p class="product-name">Boys Jacket - R250</p>
-          </li>
-        </ul>
+      <section>
+        <div class="shop-controls" aria-label="Product filters">
+          <label>
+            Search products
+            <input
+              id="product-search"
+              type="search"
+              placeholder="Search sweater, jeans, jacket..."
+              autocomplete="off"
+            />
+          </label>
+          <label>
+            Category
+            <select id="category-filter">
+              <option value="all">All categories</option>
+              <option value="Women">Women</option>
+              <option value="Men">Men</option>
+              <option value="Kids">Kids</option>
+            </select>
+          </label>
+          <label>
+            Sort by
+            <select id="sort-products">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="name">Name A-Z</option>
+            </select>
+          </label>
+        </div>
+        <p class="results-count" data-product-count></p>
+        <div class="product-grid" data-product-grid></div>
       </section>
     </main>
 
-    <!-- Footer with category summary -->
     <footer>
-      <hr />
       <p>Women | Men | Kids | Denim | Outerwear</p>
       <p>&copy; 2026 Simple Couture</p>
     </footer>

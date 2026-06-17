@@ -3,72 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple Couture is a Johannesburg fashion brand offering sustainable women, men, and kids clothing with premium everyday style."
+    />
+    <meta
+      name="keywords"
+      content="Simple Couture, Johannesburg fashion, sustainable clothing, South African fashion, women sweaters, men sweaters, kids jackets"
+    />
+    <meta name="author" content="Simple Couture" />
+    <link rel="canonical" href="index.html" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Simple Couture | Home</title>
+    <script src="js/app.js" defer></script>
+    <title>Simple Couture | Sustainable South African Fashion</title>
   </head>
   <body>
-    <!-- Site-wide header and navigation -->
     <header>
-      <h1>Simple Couture</h1>
-      <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a>
-      </nav>
-      <hr />
+      <div class="site-header">
+        <a class="brand" href="index.html">Simple Couture</a>
+        <nav aria-label="Main navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Main homepage content -->
     <main>
-      <!-- Brand intro and quick links -->
-      <section>
-        <h2>Timeless fashion with modern South African character</h2>
-        <p>
-          Simple Couture builds premium essentials for women, men, and kids
-          using quality fabrics and wearable silhouettes.
-        </p>
-        <p>
-          <a href="shop.html">Shop Collection</a> |
-          <a href="about.html">Our Story</a>
-        </p>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Johannesburg sustainable fashion</p>
+          <h1>Timeless fashion with modern South African character</h1>
+          <p>
+            Simple Couture builds premium essentials for women, men, and kids
+            using quality fabrics, wearable silhouettes, and responsible
+            production.
+          </p>
+          <div class="button-row">
+            <a class="button" href="shop.html">Shop Collection</a>
+            <a class="button button-secondary" href="about.html">Our Story</a>
+          </div>
+        </div>
+        <img
+          src="images/Women sweater R450.jpg"
+          alt="Simple Couture cream and blue women sweater styled for everyday fashion"
+        />
       </section>
 
-      <!-- Seasonal featured products -->
       <section>
-        <h2>Featured This Season</h2>
-        <table>
-          <tr>
-            <td align="center">
-              <img class="product-thumb" src="images/Women sweater R450.jpg" alt="Woman wearing cream and blue sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Women Sweater</strong>
-              <br />Soft premium knit for effortless layering.
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Men sweater R450.jpg" alt="Man in quarter zip sweater" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Men Sweater</strong>
-              <br />Merino blend with a clean quarter-zip finish.
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Girls jacket R250.jpg" alt="Girl wearing white puffer jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Girls Jacket</strong>
-              <br />Lightweight warmth made for cold school mornings.
-            </td>
-            <td align="center">
-              <img class="product-thumb" src="images/Boys jacket R250.jpg" alt="Boy in tan quilted jacket" sizes="(max-width: 700px) 100vw, (max-width: 900px) 50vw, 25vw" />
-              <br /><strong>Boys Jacket</strong>
-              <br />Durable everyday outerwear with comfort-first fit.
-            </td>
-          </tr>
-        </table>
+        <div class="section-heading">
+          <p class="eyebrow">Featured products</p>
+          <h2>Featured This Season</h2>
+        </div>
+        <div class="featured-grid" data-featured-products></div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <p class="eyebrow">Interactive guide</p>
+          <h2>Why Customers Choose Simple Couture</h2>
+        </div>
+        <div class="accordion" data-accordion>
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="true">
+              Quality fabrics
+            </button>
+            <div class="accordion-panel">
+              <p>
+                Our sweaters, denim, and jackets are selected for durability,
+                comfort, and repeat wear across busy South African lifestyles.
+              </p>
+            </div>
+          </article>
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              Conscious production
+            </button>
+            <div class="accordion-panel" hidden>
+              <p>
+                We focus on smaller batches, responsible fabric choices, and
+                reduced waste so that style does not come at the cost of care.
+              </p>
+            </div>
+          </article>
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              Family sizing
+            </button>
+            <div class="accordion-panel" hidden>
+              <p>
+                Collections include women, men, girls, and boys, making it easy
+                for families to find practical premium pieces in one place.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
-    <!-- Footer with contact and copyright -->
     <footer>
-      <hr />
-      <p>Phone / WhatsApp: <a href="tel:+27067204718">+27 067 204 7183</a></p>
+      <p>Phone / WhatsApp: <a href="tel:+27672047183">+27 067 204 7183</a></p>
       <p>&copy; 2026 Simple Couture</p>
     </footer>
   </body>

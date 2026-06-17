@@ -456,8 +456,58 @@ html {
   - Media Queries
   - Transitions & Transforms
   - Box-shadow & Border-radius
+- **JavaScript** - Part 3 interactivity and validation
+  - Dynamic product rendering
+  - Product search, category filtering, and sorting
+  - Accordion and tab interactions
+  - Gallery lightbox
+  - Contact form validation
 
 ---
+
+## Part 3: Enhancing Functionality and SEO
+
+### Version 3.0.0 - JavaScript, SEO, and Interaction Upgrade (2026-06-17)
+
+**Feedback and Visual Improvements Applied:**
+- Reworked the shared header and navigation so the menu stays horizontal and no longer displays separator bars on their own lines.
+- Replaced table-based product and gallery layouts with responsive CSS Grid layouts for better mobile display and cleaner structure.
+- Reduced excessive card styling on general page sections while keeping product and gallery cards clear and reusable.
+- Updated the colour system to keep the Simple Couture warm neutral identity while adding a teal accent for stronger contrast and clearer interactive states.
+
+**Interactive Elements Implemented:**
+- Added an accordion on the homepage that allows users to expand and collapse information about quality fabrics, conscious production, and family sizing.
+- Added interactive tabs on the About page for History, Mission, and Sustainability content.
+- Added a gallery lightbox on the Gallery page so users can click an image and view it in a larger overlay.
+- Added CSS transitions and JavaScript-driven state changes for product cards, navigation links, accordions, tabs, buttons, and the lightbox.
+- Added an embedded OpenStreetMap location feature on the Contact page to show the Johannesburg studio area.
+
+**Dynamic Content Implemented:**
+- Created `js/app.js` as the central JavaScript file for all Part 3 behaviour.
+- Added a JavaScript product data array used to dynamically render featured homepage products, the full shop catalogue, and gallery cards.
+- Added live product search on the Shop page so customers can filter products by keyword.
+- Added category filtering for Women, Men, and Kids products.
+- Added sorting options for featured order, price low to high, price high to low, and product name A-Z.
+- Added a live product count so users receive immediate feedback when filtering.
+
+**Forms and Validation:**
+- Expanded the Contact form with name, email, enquiry type, and message fields.
+- Added JavaScript validation for required fields, email format, minimum name length, and minimum message length.
+- Added inline error messages and `aria-invalid` updates for accessibility.
+- Added a success message explaining that the enquiry is ready once a backend is connected.
+
+**SEO Improvements:**
+- Added unique title tags for every page using descriptive keywords.
+- Added unique meta descriptions for Home, About, Shop, Gallery, and Contact pages.
+- Added keyword meta tags that target sustainable fashion, Johannesburg fashion, South African clothing, sweaters, denim, jackets, and Simple Couture.
+- Added canonical links for each page.
+- Improved heading structure by using one main `h1` per page and clearer `h2`/`h3` hierarchy.
+- Improved internal linking through navigation and homepage call-to-action links.
+- Improved image alt text to describe products more clearly for both accessibility and search engines.
+- Maintained mobile-friendly responsive layout through updated media queries.
+
+**Deployment Note:**
+- The project remains a static HTML, CSS, and JavaScript website and can be deployed to GitHub Pages, Netlify, or any free static hosting platform.
 
 ## Color Palette
 
